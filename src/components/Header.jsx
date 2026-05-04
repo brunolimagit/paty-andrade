@@ -1,5 +1,5 @@
 import logoPatricia from '../assets/logo-paty.png'
-
+import {SignInIcon} from "@phosphor-icons/react";
 export default function Header(){
     return(
         <main className='bg-[#A75B46]'>
@@ -18,7 +18,7 @@ export default function Header(){
                             <li><a href="/">Quem sou</a></li>
                             <li><a href="/">Trabalhos</a></li>
                             <li><a href="/">Especialidades</a></li>
-                            <li><a href="/">Fed Back</a></li>
+                            <li><a href="/">Feed Back</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -29,8 +29,8 @@ export default function Header(){
                     <button className=" text-[#E6C6B4] py-2 px-4 rounded-[50px] font-bold border-2 border-[#E6C6B4] hover:bg-[#E6C6B4] hover:text-[#A75B46] transition-colors duration-300 cursor-pointer">
                         Contado
                     </button>
-                    <button className="bg-[#E6C6B4] text-[#A75B46] py-2 px-4 rounded-[50px] font-bold border-2 border-[#E6C6B4] hover:text-[#E6C6B4] hover:bg-[#A75B46] transition-colors duration-300 cursor-pointer">
-                        Login
+                    <button className=" flex gap-2 bg-[#E6C6B4] text-[#A75B46] py-2 px-4 rounded-[50px] font-bold border-2 border-[#E6C6B4] hover:text-[#E6C6B4] hover:bg-[#A75B46] transition-colors duration-300 cursor-pointer">
+                        Login <SignInIcon size={27} />
                     </button>
                 </div>
             </header>
