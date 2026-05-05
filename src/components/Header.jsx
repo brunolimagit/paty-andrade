@@ -1,39 +1,34 @@
 import logoPatricia from '../assets/logo-paty.png'
-import {SignInIcon} from "@phosphor-icons/react";
+import { SignIn } from "@phosphor-icons/react";
+
 export default function Header(){
     return(
-        <main className='bg-[#A75B46]'>
-            <header  className='flex justify-between px-10  items-center'>
+        <header className='absolute top-0 left-0 w-full z-50 flex justify-between px-10 items-center py-4'>
 
-                {/*logo*/}
-                <div className='w-[120px]'>
-                    <img src={logoPatricia} className="" alt="logo-patricia" />
-                </div>
+            {/* logo */}
+            <div className='w-[120px]'>
+                <img src={logoPatricia} alt="logo-patricia" />
+            </div>
 
-               {/*topicos*/}
-                <div  className="flex items-center">
-                    <nav>
-                        <ul className="flex gap-4 text-[#E6C6B4] font-bold text-xl">
-                            <li className="hover:text-[#D65FE4]"><a href="/">Inicio</a></li>
-                            <li><a href="/">Quem sou</a></li>
-                            <li><a href="/">Trabalhos</a></li>
-                            <li><a href="/">Especialidades</a></li>
-                            <li><a href="/">Feed Back</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            {/* menu */}
+            <nav className="ml-20">
+                <ul className="flex gap-4 text-[#575c54] font-bold ">
+                    <li className="hover:text-[#A75B46] font-raleway"><a href="/">HOME</a></li>
+                    <li className="hover:text-[#A75B46]"><a href="/">SERVIÇOS</a></li>
+                    <li className="hover:text-[#A75B46]"><a href="/">SOBRE</a></li>
+                    <li className="hover:text-[#A75B46]"><a href="/">CONTATO</a></li>
+                </ul>
+            </nav>
 
-                {/*login*/}
-                <div className="flex gap-4">
-                    
-                    <button className=" text-[#E6C6B4] py-2 px-4 rounded-[50px] font-bold border-2 border-[#E6C6B4] hover:bg-[#E6C6B4] hover:text-[#A75B46] transition-colors duration-300 cursor-pointer">
-                        Contado
-                    </button>
-                    <button className=" flex gap-2 bg-[#E6C6B4] text-[#A75B46] py-2 px-4 rounded-[50px] font-bold border-2 border-[#E6C6B4] hover:text-[#E6C6B4] hover:bg-[#A75B46] transition-colors duration-300 cursor-pointer">
-                        Login <SignInIcon size={27} />
-                    </button>
-                </div>
-            </header>
-        </main>
+            {/* botões */}
+            <div className="">
+            
+
+                <button className="flex gap-2 bg-[#E6C6B4] text-[#A75B46] py-2 px-4 rounded-[50px] font-bold border-2 border-[#E6C6B4] hover:text-[#E6C6B4] hover:bg-[#A75B46] transition cursor-pointer">
+                    Login <SignIn size={27} />
+                </button>
+            </div>
+
+        </header>
     )
 }
