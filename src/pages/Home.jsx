@@ -11,7 +11,7 @@ export default function Home() {
         </h1>
 
         <Link
-          to="/agendamento"
+          to="/"
           className="bg-[#A75B46] text-white px-8 py-4 rounded-full"
         >
           Agendar Horário

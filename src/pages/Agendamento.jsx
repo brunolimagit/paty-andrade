@@ -1,5 +1,5 @@
-import  Header  from "../components/Header";
-import HomePrincipal from "../components/HomePrincipal"
+import Header from "../components/Header";
+import HomePrincipal from "../components/HomePrincipal";
 import { Footer } from "../components/Footer";
 import { FormularioAgendamento } from "../components/FormularioAgendamento";
 import { CardServico } from "../components/CardServico";
@@ -8,96 +8,110 @@ export default function Agendamento() {
   return (
     <>
       <Header />
-      <HomePrincipal/>
-    <main className="bg-[#F8F3F0] min-h-screen font-raleway">
 
-      {/* HEADER */}
+      <main className="bg-[#F8F3F0] min-h-screen font-raleway">
 
-      {/* HERO */}
-      <section className=" h-[500px] relative flex items-center justify-center ">
+        {/* HOME PRINCIPAL */}
+        <HomePrincipal />
 
+        {/* HERO */}
+        <section className="h-[400px] relative flex items-center justify-center overflow-hidden bg-[#A75B46]">
 
-        <div className="absolute inset-0 bg-black/40"></div>
-
-        <div className="relative z-10 text-center px-6">
-          <p className="text-[#E6C6B4] uppercase tracking-[5px] font-semibold mb-4">
-            Agendamento Online
-          </p>
-
-          <h1 className="text-5xl md:text-7xl text-white font-bold leading-tight">
-            Reserve seu horário
-          </h1>
-
-          <p className="text-white/80 mt-6 text-lg max-w-2xl mx-auto">
-            Escolha o melhor horário para cuidar das suas unhas
-            com conforto e praticidade.
-          </p>
-        </div>
-      </section>
-
-      {/* SERVIÇOS */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-
-        <div className="text-center mb-14">
-          <p className="text-[#A75B46] uppercase tracking-[4px] font-semibold mb-3">
-            Serviços
-          </p>
-
-          <h2 className="text-4xl font-bold text-[#3D2B24]">
-            Escolha seu atendimento
-          </h2>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-
-          <CardServico
-            titulo="Alongamento"
-            descricao="Unhas elegantes e sofisticadas com acabamento premium."
-            preco="R$ 120"
+          {/* IMAGEM */}
+          <img
+            src="https://images.unsplash.com/photo-1610992237331-2f1a0f4c3f1f?q=80&w=1600&auto=format&fit=crop"
+            alt="manicure"
+            className="absolute inset-0 w-full h-full object-cover -z-10"
           />
 
-          <CardServico
-            titulo="Fibra de Vidro"
-            descricao="Alta durabilidade e aspecto natural."
-            preco="R$ 150"
-          />
+          {/* OVERLAY */}
+          <div className="absolute inset-0 bg-black/40 z-10"></div>
 
-          <CardServico
-            titulo="Manutenção"
-            descricao="Cuidados essenciais para manter suas unhas impecáveis."
-            preco="R$ 80"
-          />
+          {/* TEXTO */}
+          <div className="relative z-10 text-center px-6">
 
-          <CardServico
-            titulo="Esmaltação"
-            descricao="Acabamento delicado com cores modernas."
-            preco="R$ 50"
-          />
+            <p className="text-[#E6C6B4] uppercase tracking-[5px] font-semibold mb-4">
+              Agendamento Online
+            </p>
 
-        </div>
-      </section>
+            <h1 className="text-5xl md:text-7xl text-white font-bold leading-tight">
+              Reserve seu horário
+            </h1>
 
-      {/* AGENDAMENTO */}
-      <section className="max-w-6xl mx-auto px-6 pb-20">
+            <p className="text-white/80 mt-6 text-lg max-w-2xl mx-auto">
+              Escolha o melhor horário para cuidar das suas unhas
+              com conforto e praticidade.
+            </p>
 
-        <div className="text-center mb-14">
-          <p className="text-[#A75B46] uppercase tracking-[4px] font-semibold mb-3">
-            Agende agora
-          </p>
+          </div>
+        </section>
 
-          <h2 className="text-4xl font-bold text-[#3D2B24]">
-            Escolha sua data e horário
-          </h2>
-        </div>
+        {/* SERVIÇOS */}
+        <section className="max-w-6xl mx-auto px-6 py-20">
 
-        <FormularioAgendamento />
+          <div className="text-center mb-14">
 
-      </section>
+            <p className="text-[#A75B46] uppercase tracking-[4px] font-semibold mb-3">
+              Serviços
+            </p>
 
-      {/* FOOTER */}
-      <Footer />
+            <h2 className="text-4xl font-bold text-[#3D2B24]">
+              Escolha seu atendimento
+            </h2>
 
-    </main>
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <CardServico
+              titulo="Alongamento"
+              descricao="Unhas elegantes e sofisticadas com acabamento premium."
+              preco="R$ 120"
+            />
+
+            <CardServico
+              titulo="Fibra de Vidro"
+              descricao="Alta durabilidade e aspecto natural."
+              preco="R$ 150"
+            />
+
+            <CardServico
+              titulo="Manutenção"
+              descricao="Cuidados essenciais para manter suas unhas impecáveis."
+              preco="R$ 80"
+            />
+
+            <CardServico
+              titulo="Esmaltação"
+              descricao="Acabamento delicado com cores modernas."
+              preco="R$ 50"
+            />
+
+          </div>
+        </section>
+
+        {/* AGENDAMENTO */}
+        <section className="max-w-6xl mx-auto px-6 pb-20">
+
+          <div className="text-center mb-14">
+
+            <p className="text-[#A75B46] uppercase tracking-[4px] font-semibold mb-3">
+              Agende agora
+            </p>
+
+            <h2 className="text-4xl font-bold text-[#3D2B24]">
+              Escolha sua data e horário
+            </h2>
+
+          </div>
+
+          <FormularioAgendamento />
+
+        </section>
+
+        <Footer />
+
+      </main>
     </>
   );
 }
